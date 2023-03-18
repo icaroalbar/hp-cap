@@ -15,9 +15,9 @@ module.exports = {
         },
       },
       backgroundImage: {
-        header: "url('src/assets/images/header.jpg')",
-        company: "url('src/assets/images/company.png')",
-        companyImage: "url('src/assets/images/companyImage.jpg')",
+        header: "url('assets/images/header.jpg')",
+        company: "url('assets/images/company.png')",
+        companyImage: "url('assets/images/companyImage.jpg')",
       },
     },
   },
