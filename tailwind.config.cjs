@@ -13,6 +13,11 @@ module.exports = {
           20: "#172F4C",
           30: "#194486",
         },
+        secondary: {
+          10: "#BE8F41",
+          20: "#D3AE58",
+          30: "#8E7923",
+        },
       },
       backgroundImage: {
         header: "url('assets/images/header.jpg')",

@@ -13,7 +13,7 @@ export default function Policy() {
       <div className="bg-company">
         <div className="px-16 py-10 text-end">
           <a
-            href="/src/assets/Documents/policy-aga.pdf"
+            href="/assets/Documents/policy-aga.pdf"
             target="_blank"
             className="bg-primary-10 hover:bg-primary-20 duration-300 px-5 py-3 rounded-md font-semibold text-white text-xs uppercase"
           >

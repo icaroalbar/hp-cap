@@ -4,8 +4,10 @@ import { Textarea } from "../styles/components/TextArea";
 import { ToastContainer, toast } from "react-toastify";
 import { Select } from "../styles/components/Select";
 import { Button } from "../styles/components/Button";
+import { RiArrowRightUpFill } from "react-icons/ri";
 import { Input } from "../styles/components/Input";
 import { Footer } from "../components/Footer";
+import { FaWhatsapp } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { Nav } from "../components/Nav";
 import { Helmet } from "react-helmet";
@@ -42,11 +44,11 @@ export default function Contact() {
     data.id = uuidUppercase;
 
     try {
-      await axios({
-        method: "post",
-        url: "https://fmdtbztec6.execute-api.us-east-1.amazonaws.com/default/SendMail",
-        data: data,
-      });
+      // await axios({
+      //   method: "post",
+      //   url: "https://fmdtbztec6.execute-api.us-east-1.amazonaws.com/default/SendMail",
+      //   data: data,
+      // });
       // await axios({
       //   method: "post",
       //   url: "./api/botTelegram",
@@ -67,27 +69,58 @@ export default function Contact() {
   };
 
   return (
-    <>
+    <div className="bg-zinc-300">
       <Helmet>
-        <title>Contato</title>
+        <title>Contato</title>s
         <meta name="description" content="Helmet application" />
       </Helmet>
       <Nav />
+      <ToastContainer />
       <div className="grid grid-cols-2">
-        <div className="bg-contact col-span-1">
-          <ToastContainer />
+        <div className="col-span-1 flex items-center justify-center">
+          <div className="w-8/12 m-4 flex gap-5 items-center text-xl font-medium text-white rounded-lg bg-primary-10 p-4 shadow-lg">
+            <div className="flex flex-col gap-y-5">
+              <div className="flex items-center gap-x-3">
+                <FaWhatsapp className="text-3xl" />
+                <h2>WhatsApp</h2>
+              </div>
+              <h3 className="border-b-2 border-secondary-20 pb-3">
+                +55 21 4040-4148
+              </h3>
+              <div className="flex flex-col justify-center gap-5">
+                <p className="text-sm text-justify">
+                  Converse conosco pelo WhatsApp. É só apontar a câmera do seu
+                  celular para o QR code ao lado.
+                </p>
+                <img
+                  src="assets/images/qr-code.png"
+                  alt="Código QR Code"
+                  width={300}
+                  className="mx-auto"
+                />
+              </div>
+              <a
+                className="text-sm text-justify flex gap-x-2 items-center hover:text-secondary-20 duration-150 ease-in-out"
+                href="#!"
+              >
+                Ou clique aqui{" "}
+                <RiArrowRightUpFill className="font-bold text-2xl text-secondary-10" />
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="col-span-2 lg:col-span-1 p-16 bg-zinc-300">
+        <div className="col-span-2 lg:col-span-1 p-16">
           <h1 className="font-semibold text-primary-10 text-3xl pb-5">
             Fale conosco
           </h1>
-          <p>
+          <h4 className="text-xl">
             Estamos dispostos a sanar quaisquer dúvidas que possam surgir. Caso
-            queira falar conosco, basta preencher o formulário ao lado.
-          </p>
+            queira falar conosco, basta preencher o formulário ao lado ou entrar
+            em contato conosco através de nosso WhatsApp.
+          </h4>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col gap-3 mt-5"
+            className="flex flex-col gap-3 mt-1"
           >
             <Input
               errors={errors}
@@ -157,6 +190,6 @@ export default function Contact() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
