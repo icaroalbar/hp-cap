@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export const WhatsAppButton = (): ReactElement => {
   return (
     <a
-      href="#"
+      href="https://api.whatsapp.com/send?phone=552140404148&text=Ol%C3%A1%2C%20Grupo%20HP!%20Poderia%20me%20ajudar%3F"
       target="_blank"
       data-mdb-ripple="true"
       data-mdb-ripple-color="light"
