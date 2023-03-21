@@ -2,7 +2,7 @@ import { Button } from "../styles/components/Button";
 
 export const SectionOne = () => {
   return (
-    <section className="grid grid-cols-2 lg:h-[100vh]">
+    <section className="grid grid-cols-2">
       <div className="col-span-2 bg-company py-20 bg-cover lg:col-span-1 flex justify-center items-center">
         <div className="w-3/4 text-primary-10 flex flex-col gap-y-5">
           <div className="border-b py-2 border-primary-10">
