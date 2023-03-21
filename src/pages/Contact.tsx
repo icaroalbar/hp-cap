@@ -77,8 +77,8 @@ export default function Contact() {
       <Nav />
       <ToastContainer />
       <div className="grid grid-cols-2">
-        <div className="col-span-1 flex items-center justify-center">
-          <div className="w-8/12 m-4 flex gap-5 items-center text-xl font-medium text-white rounded-lg bg-primary-10 p-4 shadow-lg">
+        <div className="col-span-2 lg:col-span-1 order-2 lg:order-1 flex items-center justify-center">
+          <div className="w-9/12 lg:w-8/12 m-4 flex gap-5 items-center text-xl font-medium text-white rounded-lg bg-primary-10 p-4 shadow-lg">
             <div className="flex flex-col gap-y-5">
               <div className="flex items-center gap-x-3">
                 <FaWhatsapp className="text-3xl" />
@@ -93,7 +93,7 @@ export default function Contact() {
                   celular para o QR code ao lado.
                 </p>
                 <img
-                  src="assets/images/qr-code.png"
+                  src="assets/images/qr-code.svg"
                   alt="Código QR Code"
                   width={300}
                   className="mx-auto"
@@ -109,11 +109,11 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="col-span-2 lg:col-span-1 p-16">
+        <div className="col-span-2 lg:col-span-1 order-1 lg:order-2 p-16">
           <h1 className="font-semibold text-primary-10 text-3xl pb-5">
             Fale conosco
           </h1>
-          <h4 className="text-xl">
+          <h4 className="text-lg mb-4">
             Estamos dispostos a sanar quaisquer dúvidas que possam surgir. Caso
             queira falar conosco, basta preencher o formulário ao lado ou entrar
             em contato conosco através de nosso WhatsApp.
