@@ -10,8 +10,8 @@ export const SectionTwo = () => {
   return (
     <section className="flex justify-center">
       <div className="grid grid-cols-2">
-        <div className="col-span-2 py-20 bg-zinc-100 lg:col-span-1 flex justify-center items-center">
-          <div className="w-3/4 text-primary-10 flex flex-col gap-y-5">
+        <div className="col-span-2 py-20 bg-gradient-to-r from-primary-20 to-primary-10 lg:col-span-1 flex justify-center items-center">
+          <div className="w-3/4 text-white flex flex-col gap-y-5">
             <h1 className="text-3xl font-medium">
               Temos as melhores soluções para você!
             </h1>
@@ -30,7 +30,7 @@ export const SectionTwo = () => {
             {/* <Button value="saiba mais" /> */}
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center col-span-2 py-24 lg:col-span-1">
+        <div className="flex flex-col bg-company bg-cover justify-center items-center col-span-2 py-24 lg:col-span-1">
           <div className="flex flex-col">
             <div className="border-b border-primary-10 py-2 text-primary-10">
               <p className="capitalize text-xl font-light">soluções</p>

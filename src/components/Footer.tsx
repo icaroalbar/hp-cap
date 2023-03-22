@@ -39,21 +39,30 @@ export const Footer = () => {
             <ul>
               <h1 className={title}>Siga nossas redes</h1>
               <div className="flex text-slate-400 gap-2 py-3">
-                <a href="./contact">
+                <a
+                  href="https://www.facebook.com/grupohpcapital"
+                  target="_blank"
+                >
                   <li className={`${icon}`}>
                     <i>
                       <FaFacebook />
                     </i>
                   </li>
                 </a>
-                <a href="./contact">
+                <a
+                  href="https://www.instagram.com/hpcapitaloficial/"
+                  target="_blank"
+                >
                   <li className={`${icon}`}>
                     <i>
                       <FaInstagram />
                     </i>
                   </li>
                 </a>
-                <a href="./contact">
+                <a
+                  href="https://www.linkedin.com/company/hpcapitaloficial/"
+                  target="_blank"
+                >
                   <li className={`${icon}`}>
                     <i>
                       <FaLinkedin />
@@ -98,10 +107,10 @@ export const Footer = () => {
           <ul className={ulBox}>
             <ul className={ulInfo}>
               <h1 className={title}>Outras informações</h1>
-              <a href="https://www.agaempreendimentos.com.br/" target="blank">
+              <a href="https://www.agaempreendimentos.com.br/" target="_blank">
                 <li className={`${li} ${linkFooter}`}>AGÁ Empreendimentos</li>
               </a>
-              <a href="https://www.hpbank.com.br/" target="blank">
+              <a href="https://www.hpbank.com.br/" target="_blank">
                 <li className={`${li} ${linkFooter}`}>HP Bank</li>
               </a>
               <Link to="/policy" target="_blank">
@@ -109,19 +118,19 @@ export const Footer = () => {
                   Politica de privacidade
                 </li>
               </Link>
-              <a href="https://www.hpbank.com.br/" target="blank">
+              <a href="https://dash-bankhp.vercel.app/" target="_blank">
                 <li className={`${li} ${linkFooter}`}>Área do cliente</li>
               </a>
             </ul>
             <ul className={ulInfo}>
               <h1 className={title}>Área do parceiro</h1>
-              <a href="https://glpi.hpcap.com.br/" target="blank">
+              <a href="https://glpi.hpcap.com.br/" target="_blank">
                 <li className={`${li} ${linkFooter}`}>GLPI</li>
               </a>
-              <a href="https://login.microsoftonline.com/" target="blank">
+              <a href="https://login.microsoftonline.com/" target="_blank">
                 <li className={`${li} ${linkFooter}`}>Webmail</li>
               </a>
-              <a href="#" target="blank">
+              <a href="#" target="_blank">
                 <li className={`${li} ${linkFooter}`}>Operador</li>
               </a>
             </ul>

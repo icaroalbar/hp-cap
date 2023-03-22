@@ -11,13 +11,25 @@ export const SocialFooter = (): ReactElement => {
         <span>Conecte-se conosco nas redes sociais:</span>
       </div>
       <div className="flex justify-center">
-        <a href="#!" className={linkIconsFooterStyle}>
+        <a
+          href="https://www.facebook.com/grupohpcapital"
+          className={linkIconsFooterStyle}
+          target="_blank"
+        >
           {FacebookIcon}
         </a>
-        <a href="#!" className={linkIconsFooterStyle}>
+        <a
+          href="https://www.instagram.com/hpcapitaloficial/"
+          className={linkIconsFooterStyle}
+          target="_blank"
+        >
           {InstagranIcon}
         </a>
-        <a href="#!" className={linkIconsFooterStyle}>
+        <a
+          href="https://www.linkedin.com/company/hpcapitaloficial/"
+          className={linkIconsFooterStyle}
+          target="_blank"
+        >
           {LinkedinIcon}
         </a>
       </div>

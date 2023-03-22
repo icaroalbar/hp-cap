@@ -101,7 +101,8 @@ export default function Contact() {
               </div>
               <a
                 className="text-sm text-justify flex gap-x-2 items-center hover:text-secondary-20 duration-150 ease-in-out"
-                href="#!"
+                href="https://api.whatsapp.com/send?phone=552140404148&text=Ol%C3%A1%2C%20Grupo%20HP!%20Poderia%20me%20ajudar%3F"
+                target="_blank"
               >
                 Ou clique aqui{" "}
                 <RiArrowRightUpFill className="font-bold text-2xl text-secondary-10" />
