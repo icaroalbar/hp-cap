@@ -1,7 +1,7 @@
 import { WhatsAppButton } from "../styles/components/WhatsAppButton";
-import { Button } from "../styles/components/Button";
 import { ReactElement } from "react";
 import { Nav } from "./Nav";
+import { Link } from "react-router-dom";
 
 function Header(): ReactElement {
   return (
@@ -21,7 +21,14 @@ function Header(): ReactElement {
             <p className="text-lg mt-5">
               Trazendo para você um grande conforto para a sua vida!.
             </p>
-            <Button value="saiba mais" />
+            <div className=" my-5 mx-3">
+              <Link
+                to="/contact"
+                className="bg-transparent border-2 hover:bg-primary-20 px-10 py-3 duration-300 rounded-md font-semibold text-white uppercase inline-block"
+              >
+                saiba mais
+              </Link>
+            </div>
           </div>
         </div>
       </div>

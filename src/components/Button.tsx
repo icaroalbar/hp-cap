@@ -5,7 +5,7 @@ import { IButton } from "../styles/components/@types";
 export const Button = ({
   isLoading,
   value,
-  color = "bg-primary-20",
+  color = "bg-gradient-to-r from-primary-10 to-red-200",
   hover = "hover:bg-primary-10",
   type = "submit",
   size = "px-20 py-3",

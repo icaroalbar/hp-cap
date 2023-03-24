@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../styles/components/Button";
 
 export const SectionOne = () => {
@@ -26,7 +27,12 @@ export const SectionOne = () => {
           <h3 className="text-2xl font-light">
             Seu sucesso, nossa maior conquista!
           </h3>
-          <Button value="saiba mais" />
+          <Link to="/contact">
+            <Button
+              value="saiba mais"
+              className="bg-gradient-to-r from-primary-10 to-primary-20"
+            />
+          </Link>
         </div>
       </div>
       <div className="hidden lg:!flex col-span-1 bg-companyImage bg-cover bg-right"></div>

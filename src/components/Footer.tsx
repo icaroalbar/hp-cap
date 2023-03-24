@@ -86,18 +86,18 @@ export const Footer = () => {
             </ul>
             <ul className={ulInfo}>
               <h1 className={title}>Serviços</h1>
-              <a href="./contact">
+              <a href="./safe">
                 <li className={`${li} ${linkFooter}`}>Seguros</li>
               </a>
-              <a href="./contact">
+              <a href="./structuring">
                 <li className={`${li} ${linkFooter}`}>
                   Estruturação de Negócios
                 </li>
               </a>
-              <a href="./contact">
+              <a href="./health">
                 <li className={`${li} ${linkFooter}`}>Plano de Saúde</li>
               </a>
-              <a href="./contact">
+              <a href="./consortium">
                 <li className={`${li} ${linkFooter}`}>Consórcio</li>
               </a>
             </ul>

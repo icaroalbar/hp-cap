@@ -35,16 +35,24 @@ export const Dropdown = ({ value }: ILink): ReactElement => {
         data-te-dropdown-menu-ref
       >
         <div className="py-5 lg:px-2">
-          <LinkDropdown value="Seguros" href="#!" icon={<BsShieldShaded />} />
+          <LinkDropdown
+            value="Seguros"
+            href="/safe"
+            icon={<BsShieldShaded />}
+          />
           <LinkDropdown
             value="Estruturação de negócios"
-            href="#!"
+            href="/structuring"
             icon={<BsFillGearFill />}
           />
-          <LinkDropdown value="Planos de saúde" href="#!" icon={<BiHealth />} />
+          <LinkDropdown
+            value="Planos de saúde"
+            href="/health"
+            icon={<BiHealth />}
+          />
           <LinkDropdown
             value="Consórcio"
-            href="#!"
+            href="/consortium"
             icon={<BsFillCarFrontFill />}
           />
         </div>
