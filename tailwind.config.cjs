@@ -23,6 +23,7 @@ module.exports = {
         header: "url('assets/images/header.jpg')",
         company: "url('assets/images/company.png')",
         companyImage: "url('assets/images/companyImage.jpg')",
+        safe: "url('assets/images/safe.jpg')",
       },
     },
   },
