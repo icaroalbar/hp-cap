@@ -2,26 +2,40 @@ import { Link } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { Nav } from "../components/Nav";
 import { Button } from "../styles/components/Button";
+import { Helmet } from "react-helmet";
+import { BsShieldShaded } from "react-icons/bs";
+
+const bgProduct = `bg-safe`;
+
+const icon = <BsShieldShaded />;
+
+const title = `Seguros`;
+
+const info = `O seguro de vida é indicado para quem não deseja deixar seus
+entes desamparados em caso de falecimento. Neste projeto a longo
+prazo, um valor mensal é pago pelo titular do plano, que designa
+os membros da família que irão receber o montante. Do mesmo
+modo, os seguros de bens dão proteção a bens materiais como
+carro ou casa`;
 
 export default function Safe() {
   return (
     <>
+      <Helmet>
+        <title>Seguros</title>s
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <Nav />
       <div>
-        <div className="bg-safe bg-cover bg-right lg:h-[80vh] flex items-center">
+        <div
+          className={`${bgProduct} bg-cover bg-right lg:h-[80vh] flex items-center`}
+        >
           <div className="grid grid-cols-2 gap-4 px-8 md:px-24 py-12">
             <div className="col-span-2 md:col-span-1 text-justify bg-zinc-50 p-10 rounded-lg shadow-lg">
-              <h1 className="text-2xl pb-2 border-b-2 border-primary-10 mb-5 text-justify">
-                Seguros
+              <h1 className="flex items-center gap-x-4 text-2xl pb-2 border-b-2 border-primary-10 mb-5 text-justify">
+                {icon} {title}
               </h1>
-              <p>
-                O seguro de vida é indicado para quem não deseja deixar seus
-                entes desamparados em caso de falecimento. Neste projeto a longo
-                prazo, um valor mensal é pago pelo titular do plano, que designa
-                os membros da família que irão receber o montante. Do mesmo
-                modo, os seguros de bens dão proteção a bens materiais como
-                carro ou casa
-              </p>
+              <p>{info}</p>
               <div className="flex justify-center md:justify-start mt-5">
                 <Link to="/contact">
                   <Button
