@@ -3,7 +3,7 @@ import Partners from "../components/Partners";
 import { Footer } from "../components/Footer";
 import Policy from "../components/PolicyModal";
 import { SectionOne } from "../components/SectionOne";
-import { SectionTwo } from "../components/SectionTwo";
+import { Solutions } from "../components/Solutions";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Policy />
       <Header />
       <SectionOne />
-      <SectionTwo />
+      <Solutions />
       <Partners />
       <Footer />
     </>

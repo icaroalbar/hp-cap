@@ -6,7 +6,7 @@ import {
   BsShieldShaded,
 } from "react-icons/bs";
 
-export const SectionTwo = () => {
+export const Solutions = () => {
   return (
     <section className="flex justify-center">
       <div className="grid grid-cols-2">
@@ -37,17 +37,21 @@ export const SectionTwo = () => {
             </div>
             <div className="grid grid-cols-2">
               <div className="col-span-2 md:col-span-1">
-                <Card href="#" icon={<BsShieldShaded />} value="Seguros" />
+                <Card href="/safe" icon={<BsShieldShaded />} value="Seguros" />
                 <Card
-                  href="#"
+                  href="/structuring"
                   icon={<BsFillGearFill />}
                   value="Estruturação de negócios"
                 />
               </div>
               <div className="col-span-2 md:col-span-1">
-                <Card href="#" icon={<BiHealth />} value="Plano de Saúde" />
                 <Card
-                  href="#"
+                  href="/health"
+                  icon={<BiHealth />}
+                  value="Plano de Saúde"
+                />
+                <Card
+                  href="consortium"
                   icon={<BsFillCarFrontFill />}
                   value="Consórcio"
                 />
