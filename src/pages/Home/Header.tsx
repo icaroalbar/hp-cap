@@ -1,6 +1,6 @@
-import { WhatsAppButton } from "../styles/components/WhatsAppButton";
+import { WhatsAppButton } from "../../styles/components/WhatsAppButton";
 import { ReactElement } from "react";
-import { Nav } from "./Nav";
+import { Nav } from "../../components/Nav";
 import { Link } from "react-router-dom";
 
 function Header(): ReactElement {

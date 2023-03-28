@@ -1,5 +1,5 @@
 import { BiHealth } from "react-icons/bi";
-import { Card } from "../styles/components/Cards";
+import { Card } from "../../styles/components/Cards";
 import {
   BsFillCarFrontFill,
   BsFillGearFill,
@@ -8,7 +8,7 @@ import {
 
 export const Solutions = () => {
   return (
-    <section className="flex justify-center">
+    <article className="flex justify-center">
       <div className="grid grid-cols-2">
         <div className="col-span-2 py-20 bg-gradient-to-r from-primary-20 to-primary-10 lg:col-span-1 flex justify-center items-center">
           <div className="w-3/4 text-white flex flex-col gap-y-5">
@@ -60,6 +60,6 @@ export const Solutions = () => {
           </div>
         </div>
       </div>
-    </section>
+    </article>
   );
 };

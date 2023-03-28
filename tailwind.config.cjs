@@ -27,6 +27,7 @@ module.exports = {
         health: "url('assets/images/health.jpg')",
         car: "url('assets/images/car.jpg')",
         structuring: "url('assets/images/structuring.jpg')",
+        woman: "url('assets/images/woman.jpg')",
       },
     },
   },

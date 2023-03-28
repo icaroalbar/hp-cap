@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { Button } from "../styles/components/Button";
+import { Button } from "../../styles/components/Button";
+import { ReactElement } from "react";
 
-export const SectionOne = () => {
+export const Information = (): ReactElement => {
   return (
-    <section className="grid grid-cols-2">
+    <article className="grid grid-cols-2">
       <div className="col-span-2 bg-company py-20 bg-cover lg:col-span-1 flex justify-center items-center">
         <div className="w-3/4 text-primary-10 flex flex-col gap-y-5">
           <div className="border-b py-2 border-primary-10">
@@ -36,6 +37,6 @@ export const SectionOne = () => {
         </div>
       </div>
       <div className="hidden lg:!flex col-span-1 bg-companyImage bg-cover bg-right"></div>
-    </section>
+    </article>
   );
 };

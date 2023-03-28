@@ -1,27 +1,24 @@
-import { Helmet } from "react-helmet";
-import { Footer } from "../components/Footer";
-import { Nav } from "../components/Nav";
+import { Footer } from "../../components/Footer";
+import { Nav } from "../../components/Nav";
+import { Head } from "../../utils/Head";
 
 export default function Policy() {
   return (
     <>
-      <Helmet>
-        <title>Política de Privacidade</title>
-        <meta name="description" content="Helmet application" />
-      </Helmet>
+      <Head title="Política de privacidade" />
       <Nav />
-      <div className="bg-company">
-        <div className="px-16 py-10 text-end">
+      <main className="bg-company">
+        <section className="px-16 py-10 text-end">
           <a
-            href="/assets/Documents/policy-aga.pdf"
+            href="/assets/Documents/Policy-Group-HP.pdf"
             target="_blank"
             className="bg-primary-10 hover:bg-primary-20 duration-300 px-5 py-3 rounded-md font-semibold text-white text-xs uppercase"
           >
             versão impressa
           </a>
-        </div>
-        <div className={`text-primary-10`}>
-          <div className="container mx-auto px-12 pt-18 pb-10">
+        </section>
+        <section className={`text-primary-10`}>
+          <article className="container mx-auto px-12 pt-18 pb-10">
             <div className="grid grid-cols-12">
               <div className={`col-span-12 md:order-1 text-justify`}>
                 <h1 className="text-center md:text-left leading-none font-light text-4xl my-4 md:mb-4">
@@ -390,9 +387,9 @@ export default function Policy() {
                 </ol>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </article>
+        </section>
+      </main>
       <Footer />
     </>
   );

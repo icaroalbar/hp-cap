@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Structuring from "../pages/Structuring";
 import Consortium from "../pages/Consortium";
-import Services from "../pages/Services";
 import Contact from "../pages/Contact";
 import Company from "../pages/Company";
 import Health from "../pages/Health";
@@ -15,7 +14,6 @@ export default function Router() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/company" element={<Company />} />
-        <Route path="/services" element={<Services />} />
         <Route path="/safe" element={<Safe />} />
         <Route path="/structuring" element={<Structuring />} />
         <Route path="/health" element={<Health />} />

@@ -1,16 +1,16 @@
-import { TextError } from "../styles/components/TextError";
-import { IValuesSend } from "../styles/components/@types";
-import { Textarea } from "../styles/components/TextArea";
+import { TextError } from "../../styles/components/TextError";
+import { IValuesSend } from "../../styles/components/@types";
+import { Textarea } from "../../styles/components/TextArea";
+import { Select } from "../../styles/components/Select";
+import { Button } from "../../styles/components/Button";
 import { ToastContainer, toast } from "react-toastify";
-import { Select } from "../styles/components/Select";
-import { Button } from "../styles/components/Button";
+import { Input } from "../../styles/components/Input";
 import { RiArrowRightUpFill } from "react-icons/ri";
-import { Input } from "../styles/components/Input";
-import { Footer } from "../components/Footer";
+import { Footer } from "../../components/Footer";
+import { Head } from "../../utils/Head";
 import { FaWhatsapp } from "react-icons/fa";
+import { Nav } from "../../components/Nav";
 import { useForm } from "react-hook-form";
-import { Nav } from "../components/Nav";
-import { Helmet } from "react-helmet";
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
 import axios from "axios";
@@ -34,11 +34,9 @@ export default function Contact() {
       message: "",
     },
   });
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const onSubmit = async (data: IValuesSend) => {
-    setLoading(true);
-
     const uuid = uuidv4().replace(/[-]/g, "");
     const uuidUppercase = uuid.toUpperCase();
     data.id = uuidUppercase;
@@ -51,7 +49,7 @@ export default function Contact() {
       // });
       // await axios({
       //   method: "post",
-      //   url: "./api/botTelegram",
+      //   url: "./utils/BotTelegram",
       //   data: data,
       // });
       setLoading(false);
@@ -69,15 +67,12 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-zinc-300">
-      <Helmet>
-        <title>Contato</title>s
-        <meta name="description" content="Helmet application" />
-      </Helmet>
+    <>
+      <Head title="Contato" />
       <Nav />
       <ToastContainer />
-      <div className="grid grid-cols-2">
-        <div className="col-span-2 lg:col-span-1 order-2 lg:order-1 flex items-center justify-center">
+      <section className="grid grid-cols-2 bg-zinc-300">
+        <article className="col-span-2 lg:col-span-1 order-2 lg:order-1 flex items-center justify-center">
           <div className="w-9/12 lg:w-8/12 m-4 flex gap-5 items-center text-xl font-medium text-white rounded-lg bg-primary-10 p-4 shadow-lg">
             <div className="flex flex-col gap-y-5">
               <div className="flex items-center gap-x-3">
@@ -109,8 +104,8 @@ export default function Contact() {
               </a>
             </div>
           </div>
-        </div>
-        <div className="col-span-2 lg:col-span-1 order-1 lg:order-2 p-16">
+        </article>
+        <article className="col-span-2 lg:col-span-1 order-1 lg:order-2 p-16">
           <h1 className="font-semibold text-primary-10 text-3xl pb-5">
             Fale conosco
           </h1>
@@ -188,9 +183,9 @@ export default function Contact() {
               className="mt-0"
             />
           </form>
-        </div>
-      </div>
+        </article>
+      </section>
       <Footer />
-    </div>
+    </>
   );
 }

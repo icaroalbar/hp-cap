@@ -2,7 +2,7 @@ import { Component } from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import { options } from "../styles/components/CarouselOptions";
+import { options } from "../../styles/components/CarouselOptions";
 
 export class Carousel extends Component {
   render() {
