@@ -13,7 +13,7 @@ export const Founders = (): ReactElement => {
           alt="Imagem Hugo Ricardo"
           name="Hugo Ricardo"
           office="CEO"
-          info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, cumque possimus similique rerum odit voluptates maxime incidunt."
+          info="Lorem ipsum this dolor sit amet consectetur adipisicing elit. Magnam, cumque possimus similique rerum odit voluptates maxime incidunt."
         />
         <FoundersCard
           src="/assets/images/thais.jpg"
