@@ -13,14 +13,14 @@ export const Founders = (): ReactElement => {
           alt="Imagem Hugo Ricardo"
           name="Hugo Ricardo"
           office="CEO"
-          info="Lorem ipsum this dolor sit amet consectetur adipisicing elit. Magnam, cumque possimus similique rerum odit voluptates maxime incidunt."
+          info="Trabalho duro é a chave para o sucesso. Mantedo-se motivado e concentrado nos objetivos, mesmo em grandes desafios, acreditamos e nunca deixamos de buscar maneiras de crescer."
         />
         <FoundersCard
           src="/assets/images/thais.jpg"
           alt="Imagem Thais Oliveira"
           name="Thais Oliveira"
           office="Sócia e co-fundadora"
-          info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, cumque possimus similique rerum odit voluptates maxime incidunt."
+          info="Nos do Grupo HP trabalhamos com determinação e entusiasmo, idempedente do desafio mantemos, o foco em busca do objetivo final para realizar grandes conquistas!."
         />
       </article>
     </section>
