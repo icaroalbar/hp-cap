@@ -14,7 +14,7 @@ export default function Router() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/company" element={<Company />} />
-        <Route path="/safe" element={<Contact />} />
+        <Route path="/safe" element={<Safe />} />
         <Route path="/structuring" element={<Structuring />} />
         <Route path="/health" element={<Health />} />
         <Route path="/consortium" element={<Consortium />} />

@@ -86,20 +86,20 @@ export const Footer = () => {
             </ul>
             <ul className={ulInfo}>
               <h1 className={title}>Serviços</h1>
-              <a href="/safe">
+              <Link to="/safe">
                 <li className={`${li} ${linkFooter}`}>Seguros</li>
-              </a>
-              <a href="/structuring">
+              </Link>
+              <Link to="/structuring">
                 <li className={`${li} ${linkFooter}`}>
                   Estruturação de Negócios
                 </li>
-              </a>
-              <a href="/health">
+              </Link>
+              <Link to="/health">
                 <li className={`${li} ${linkFooter}`}>Plano de Saúde</li>
-              </a>
-              <a href="/consortium">
+              </Link>
+              <Link to="/consortium">
                 <li className={`${li} ${linkFooter}`}>Consórcio</li>
-              </a>
+              </Link>
             </ul>
           </ul>
         </div>
