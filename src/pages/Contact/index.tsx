@@ -47,11 +47,11 @@ export default function Contact() {
       //   url: "https://fmdtbztec6.execute-api.us-east-1.amazonaws.com/default/SendMail",
       //   data: data,
       // });
-      // await axios({
-      //   method: "post",
-      //   url: "./utils/BotTelegram",
-      //   data: data,
-      // });
+      await axios({
+        method: "post",
+        url: "https://fmdtbztec6.execute-api.us-east-1.amazonaws.com/default/SendMail",
+        data: data,
+      });
       setLoading(false);
       reset();
       toast.success("Mensagem enviada com sucesso!", {
