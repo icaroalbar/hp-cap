@@ -113,7 +113,7 @@ export const Footer = () => {
               <a href="https://www.hpbank.com.br/" target="_blank">
                 <li className={`${li} ${linkFooter}`}>HP Bank</li>
               </a>
-              <Link to="/policy" target="_blank">
+              <Link to="/policy">
                 <li className={`${li} ${linkFooter}`}>
                   Politica de privacidade
                 </li>
