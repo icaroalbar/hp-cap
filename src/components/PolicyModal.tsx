@@ -2,6 +2,7 @@ import styles from "../styles/politica.module.css";
 import { ReactElement, useEffect } from "react";
 import { BiCookie } from "react-icons/bi";
 import { CgCloseO } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 export default function Policy(): ReactElement {
   useEffect(() => {
@@ -49,9 +50,9 @@ export default function Policy(): ReactElement {
           </div>
         </div>
         <div className="flex gap-x-4 justify-end">
-          <a href="/policy" target="_blank" className={button}>
+          <Link to="/policy" target="_blank" className={button}>
             politica
-          </a>
+          </Link>
           <button onClick={addStorage} type="button" className={button}>
             aceitar todos
           </button>
