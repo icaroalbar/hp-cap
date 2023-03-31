@@ -32,7 +32,7 @@ function Header(): ReactElement {
           </div>
         </div>
       </div>
-      <WhatsAppButton />
+      {/* <WhatsAppButton /> */}
     </header>
   );
 }
