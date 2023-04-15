@@ -42,11 +42,6 @@ export default function Contact() {
     data.id = uuidUppercase;
 
     try {
-      // await axios({
-      //   method: "post",
-      //   url: "https://fmdtbztec6.execute-api.us-east-1.amazonaws.com/default/SendMail",
-      //   data: data,
-      // });
       await axios({
         method: "post",
         url: "https://fmdtbztec6.execute-api.us-east-1.amazonaws.com/default/SendMail",

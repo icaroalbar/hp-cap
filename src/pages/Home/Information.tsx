@@ -28,7 +28,7 @@ export const Information = (): ReactElement => {
           <h3 className="text-2xl font-light">
             Seu sucesso, nossa maior conquista!
           </h3>
-          <Link to="/contact">
+          <Link target="_top" to="/contact">
             <Button>saiba mais</Button>
           </Link>
         </div>

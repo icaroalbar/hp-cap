@@ -50,7 +50,7 @@ export default function Policy(): ReactElement {
           </div>
         </div>
         <div className="flex gap-x-4 justify-end">
-          <Link to="/policy" className={button}>
+          <Link target="_top" to="/policy" className={button}>
             politica
           </Link>
           <button onClick={addStorage} type="button" className={button}>

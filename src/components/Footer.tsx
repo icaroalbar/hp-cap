@@ -77,27 +77,27 @@ export const Footer = () => {
           <ul className={ulBox}>
             <ul className={ulInfo}>
               <h1 className={title}>HP Capital</h1>
-              <Link to="/">
+              <Link target="_top" to="/">
                 <li className={`${li} ${linkFooter}`}>Home</li>
               </Link>
-              <Link to="/company">
+              <Link target="_top" to="/company">
                 <li className={`${li} ${linkFooter}`}>Quem Somos</li>
               </Link>
             </ul>
             <ul className={ulInfo}>
               <h1 className={title}>Serviços</h1>
-              <Link to="/safe">
+              <Link target="_top" to="/safe">
                 <li className={`${li} ${linkFooter}`}>Seguros</li>
               </Link>
-              <Link to="/structuring">
+              <Link target="_top" to="/structuring">
                 <li className={`${li} ${linkFooter}`}>
                   Estruturação de Negócios
                 </li>
               </Link>
-              <Link to="/health">
+              <Link target="_top" to="/health">
                 <li className={`${li} ${linkFooter}`}>Plano de Saúde</li>
               </Link>
-              <Link to="/consortium">
+              <Link target="_top" to="/consortium">
                 <li className={`${li} ${linkFooter}`}>Consórcio</li>
               </Link>
             </ul>
@@ -113,7 +113,7 @@ export const Footer = () => {
               <a href="https://www.hpbank.com.br/" target="_blank">
                 <li className={`${li} ${linkFooter}`}>HP Bank</li>
               </a>
-              <Link to="/policy">
+              <Link target="_top" to="/policy">
                 <li className={`${li} ${linkFooter}`}>
                   Politica de privacidade
                 </li>
@@ -154,7 +154,11 @@ export const Footer = () => {
                 Segunda a sexta, 08h às 18h exceto feriado.
               </li>
               <li className={`${info} ${linkFooter}`}>
-                <Link to="/contact" className="flex gap-x-3 items-center">
+                <Link
+                  target="_top"
+                  to="/contact"
+                  className="flex gap-x-3 items-center"
+                >
                   <HiMail className="text-lg" />
                   contato@hpcap.com.br
                 </Link>
@@ -162,13 +166,13 @@ export const Footer = () => {
             </ul>
             <ul className={ulInfo}>
               <h1 className={title}>Precisa de ajuda?</h1>
-              <Link to="/contact">
+              <Link target="_top" to="/contact">
                 <li className={`${li} ${linkFooter}`}>Atendimento</li>
               </Link>
-              <Link to="/contact">
+              <Link target="_top" to="/contact">
                 <li className={`${li} ${linkFooter}`}>Ouvidoria</li>
               </Link>
-              <Link to="/contact">
+              <Link target="_top" to="/contact">
                 <li className={`${li} ${linkFooter}`}>Contato</li>
               </Link>
             </ul>

@@ -17,7 +17,7 @@ export const Nav = ({
       data-te-navbar-ref
     >
       <div className="flex w-full flex-wrap items-center justify-between px-16">
-        <Link className="text-xl text-white" to="/">
+        <Link target="_top" to="/" className="text-xl text-white">
           <img
             src="assets/images/logoHp.svg"
             alt="Logo HP Capital"
