@@ -175,13 +175,9 @@ export default function Contact() {
               rules={{ required: "Escreva sua mensagem" }}
             />
             {errors.message && <TextError text="Escreva sua mensagem." />}
-            <Button
-              isLoading={loading}
-              color="bg-primary-10"
-              hover="hover:bg-primary-20"
-              value="enviar"
-              className="mt-0"
-            />
+            <Button isLoading={loading} className="mt-0">
+              enviar
+            </Button>
           </form>
         </article>
       </section>

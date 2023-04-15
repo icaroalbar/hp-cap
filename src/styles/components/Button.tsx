@@ -1,30 +1,25 @@
-import { ReactElement } from "react";
+import { ReactElement, ReactNode } from "react";
 import { loadingIcon } from "../../utils/Icons";
-import { IButton } from "./@types";
+
+interface ButtonProps {
+  children: ReactNode;
+  className?: string;
+  isLoading?: boolean;
+  type?: "button" | "submit" | "reset" | undefined;
+}
 
 export const Button = ({
-  isLoading,
-  value,
-  color = "bg-primary-20",
-  hover = "hover:bg-primary-10",
-  type = "submit",
-  size = "px-20 py-3",
+  children,
   className,
-}: IButton): ReactElement => {
-  return !isLoading ? (
+  isLoading,
+}: ButtonProps): ReactElement => {
+  return (
     <button
-      className={`${className} ${color} ${hover} ${type} ${size} duration-300 rounded-md font-semibold text-white uppercase my-3`}
+      className={`${className} flex justify-center bg-gradient-to-r from-primary-10 to-primary-20 duration-300 text-white uppercase font-semibold py-3 w-full rounded-lg ${
+        isLoading && `from-[#0F1A2E90] to-[#0F1A2E90] cursor-not-allowed`
+      }`}
     >
-      {value}
-    </button>
-  ) : (
-    <button
-      type="button"
-      className={`${className} ${color} cursor-no-drop flex justify-center gap-x-4 duration-300 px-20 py-3 opacity-75 rounded-md font-semibold text-white uppercase my-3`}
-      disabled
-    >
-      {loadingIcon}
-      Aguarde...
+      {isLoading ? loadingIcon : children}
     </button>
   );
 };

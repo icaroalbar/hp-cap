@@ -23,12 +23,11 @@ export interface ILinkContact extends IValueText, ILink {
   icon: ReactNode;
 }
 
-export interface IButton extends IValueText, IClassName {
-  color?: string;
-  hover?: string;
-  type?: "button" | "submit" | "reset" | undefined;
-  size?: string;
+interface ButtonProps {
+  children: ReactNode;
+  className?: string;
   isLoading?: boolean;
+  type?: "button" | "submit" | "reset" | undefined;
 }
 
 export type IToast = {

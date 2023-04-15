@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Button } from "../../styles/components/Button";
 import { ReactElement } from "react";
+import { Button } from "../../styles/components/Button";
 
 export const Information = (): ReactElement => {
   return (
@@ -29,10 +29,7 @@ export const Information = (): ReactElement => {
             Seu sucesso, nossa maior conquista!
           </h3>
           <Link to="/contact">
-            <Button
-              value="saiba mais"
-              className="bg-gradient-to-r from-primary-10 to-primary-20"
-            />
+            <Button>saiba mais</Button>
           </Link>
         </div>
       </div>
