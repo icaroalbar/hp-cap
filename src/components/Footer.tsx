@@ -80,7 +80,7 @@ export const Footer = () => {
               <Link target="_top" to="/">
                 <li className={`${li} ${linkFooter}`}>Home</li>
               </Link>
-              <Link target="_top" to="company">
+              <Link target="top" to="/company">
                 <li className={`${li} ${linkFooter}`}>Quem Somos</li>
               </Link>
             </ul>
