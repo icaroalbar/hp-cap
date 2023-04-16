@@ -86,7 +86,7 @@ export const Footer = () => {
             </ul>
             <ul className={ulInfo}>
               <h1 className={title}>Serviços</h1>
-              <Link target="_top" to="./safe">
+              <Link to="/safe">
                 <li className={`${li} ${linkFooter}`}>Seguros</li>
               </Link>
               <Link target="_top" to="/structuring">
