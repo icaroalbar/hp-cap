@@ -11,7 +11,7 @@ export const LinkDropdown = ({
     "flex w-full gap-x-4 items-center py-2 px-8 transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-neutral-700";
 
   return (
-    <Link target="_top" to={`${href}`} className={linkDropNavStyle}>
+    <Link to={`${href}`} className={linkDropNavStyle}>
       {icon}
       {value}
     </Link>

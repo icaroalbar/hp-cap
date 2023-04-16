@@ -20,7 +20,7 @@ export const ProductPageStructure = ({
           </h1>
           <p>{info}</p>
           <div className="flex justify-center md:justify-start mt-5">
-            <Link target="_top" to="/contact">
+            <Link to="/contact">
               <Button className="bg-gradient-to-r px-12 from-primary-10 to-primary-20">
                 saiba mais
               </Button>

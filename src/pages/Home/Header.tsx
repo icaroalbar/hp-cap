@@ -23,7 +23,6 @@ function Header(): ReactElement {
             </p>
             <div className=" my-5 mx-3">
               <Link
-                target="_top"
                 to="/contact"
                 className="bg-transparent border-2 hover:bg-primary-20 px-10 py-3 duration-300 rounded-md font-semibold text-white uppercase inline-block"
               >
