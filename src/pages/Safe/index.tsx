@@ -1,4 +1,3 @@
-import { Footer } from "../../components/Footer";
 import { Nav } from "../../components/Nav";
 import { BsShieldShaded } from "react-icons/bs";
 import { ProductPageStructure } from "../../components/ProductPageStructure";
@@ -22,7 +21,6 @@ export default function Safe() {
         title="Seguros"
         info={info}
       />
-      <Footer />
     </>
   );
 }

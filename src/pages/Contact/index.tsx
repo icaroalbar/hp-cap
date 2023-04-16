@@ -6,7 +6,6 @@ import { Button } from "../../styles/components/Button";
 import { ToastContainer, toast } from "react-toastify";
 import { Input } from "../../styles/components/Input";
 import { RiArrowRightUpFill } from "react-icons/ri";
-import { Footer } from "../../components/Footer";
 import { Head } from "../../utils/Head";
 import { FaWhatsapp } from "react-icons/fa";
 import { Nav } from "../../components/Nav";
@@ -176,7 +175,6 @@ export default function Contact() {
           </form>
         </article>
       </section>
-      <Footer />
     </>
   );
 }

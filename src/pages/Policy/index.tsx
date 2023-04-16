@@ -1,4 +1,3 @@
-import { Footer } from "../../components/Footer";
 import { Nav } from "../../components/Nav";
 import { Head } from "../../utils/Head";
 
@@ -390,7 +389,6 @@ export default function Policy() {
           </article>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,4 +1,3 @@
-import { Footer } from "../../components/Footer";
 import { Nav } from "../../components/Nav";
 import { BiHealth } from "react-icons/bi";
 import { ProductPageStructure } from "../../components/ProductPageStructure";
@@ -17,7 +16,6 @@ export default function Health() {
         title="Plano de saúde"
         info={info}
       />
-      <Footer />
     </>
   );
 }

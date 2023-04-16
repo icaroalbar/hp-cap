@@ -5,15 +5,13 @@ import { ToogleButton } from "../styles/components/ToogleButton";
 import { Link } from "react-router-dom";
 
 interface INav {
-  background?: "lg:bg-transparent" | "lg:bg-primary-10";
+  className?: string;
 }
 
-export const Nav = ({
-  background = "lg:bg-primary-10",
-}: INav): ReactElement => {
+export const Nav = ({ className }: INav): ReactElement => {
   return (
     <nav
-      className={`${background} bg-primary-10 relative flex w-full items-center justify-between   py-2 lg:flex-wrap`}
+      className={`${className} bg-primary-10 relative w-full items-center justify-between   py-2 lg:flex-wrap`}
       data-te-navbar-ref
     >
       <div className="flex w-full flex-wrap items-center justify-between px-16">

@@ -1,4 +1,3 @@
-import { Footer } from "../../components/Footer";
 import { Nav } from "../../components/Nav";
 import { BsFillGearFill } from "react-icons/bs";
 import { ProductPageStructure } from "../../components/ProductPageStructure";
@@ -17,7 +16,6 @@ export default function Structuring() {
         title="Estruturação de negócios"
         info={info}
       />
-      <Footer />
     </>
   );
 }

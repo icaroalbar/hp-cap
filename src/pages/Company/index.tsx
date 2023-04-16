@@ -1,4 +1,3 @@
-import { Footer } from "../../components/Footer";
 import { Nav } from "../../components/Nav";
 import { About } from "./About";
 import { Founders } from "./Founders";
@@ -21,7 +20,6 @@ export default function Company() {
           <Companies />
         </div>
       </main>
-      <Footer />
     </>
   );
 }
