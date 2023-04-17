@@ -20,7 +20,7 @@ export const Founders = (): ReactElement => {
           alt="Imagem Thais Oliveira"
           name="Thais Oliveira"
           office="Sócia e co-fundadora"
-          info="Nos do Grupo HP trabalhamos com determinação e entusiasmo, idempedente do desafio mantemos, o foco em busca do objetivo final para realizar grandes conquistas!."
+          info="Nós do Grupo HP trabalhamos com determinação e entusiasmo, idempedente do desafio mantemos, o foco em busca do objetivo final para realizar grandes conquistas!."
         />
       </article>
     </section>

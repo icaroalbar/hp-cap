@@ -16,12 +16,19 @@ export const HpGroup = (): ReactElement => {
         <div className="col-span-3 lg:col-span-2 flex flex-col items-start justify-center">
           <h1 className="text-3xl font-light my-3 hidden lg:block">Grupo HP</h1>
           <p className="text-justify lg:leading-loose">
-            Somos o Grupo HP. Fundado na cidade de Niteró, somos uma organização
-            que traga grandes serviços em vários segmentos que traga grandes
-            realizações para nossos cliente, amigos e colaboradores de nosso
-            grupo. Somo uma grande família que está para ajudar a realizar seus
-            sonhos!
+            O Grupo HP é uma empresa que se dedica a fornecer soluções
+            personalizadas e de alta qualidade para nossos clientes. Nós nos
+            esforçamos para atender às necessidades de nossos clientes de forma
+            eficaz e eficiente, mantendo altos padrões de ética nos negócios e
+            relações colaborativas com nossos clientes e parceiros.
           </p>
+          {/* <p className="text-justify lg:leading-loose">
+            Somos o Grupo HP. Fundado na cidade de Niterói, somos uma
+            organização que traga grandes serviços em vários segmentos que traga
+            grandes realizações para nossos clientes, amigos e colaboradores de
+            nosso grupo. Somo uma grande família que está para ajudar a realizar
+            seus sonhos!
+          </p> */}
         </div>
       </article>
       {/* <article className="grid grid-cols-2 gap-5">
