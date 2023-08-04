@@ -107,7 +107,7 @@ export const Footer = () => {
           <ul className={ulBox}>
             <ul className={ulInfo}>
               <h1 className={title}>Outras informações</h1>
-              <a href="https://www.agaempreendimentos.com.br/" target="_blank">
+              <a href="https://www.agaempreendimentos.com/" target="_blank">
                 <li className={`${li} ${linkFooter}`}>AGÁ Empreendimentos</li>
               </a>
               <a href="https://www.hpbank.com.br/" target="_blank">
